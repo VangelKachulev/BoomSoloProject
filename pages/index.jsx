@@ -1,4 +1,4 @@
-
+import Example from "../src/components/example/Example"
 import Logo from "../src/components/logo/Logo";
 
 
@@ -7,7 +7,10 @@ import Logo from "../src/components/logo/Logo";
 export default function Index() {
 
   return (
-    <Logo ></Logo>
+    <div>
+      <Logo ></Logo>
+      <Example></Example>
+    </div>
 
   )
 }
