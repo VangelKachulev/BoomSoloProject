@@ -1,6 +1,6 @@
 
 
-export function Logo(prop) {
+export default function Logo(prop) {
 
     console.log(prop);
     let type = 'default'
