@@ -1,7 +1,8 @@
 import Example from "../src/components/example/Example";
+import { Logo } from "../src/components/logo/Logo";
 
-
+let type = 'muted'
 export default function Index() {
-  
-  return <Example />;
+
+  return <Logo props={type} />;
 }

@@ -1,11 +1,12 @@
 
 
-export function Logo({ props }) {
-    console.log(props);
-    let type = 'defaults';
+export function Logo(prop) {
+
+    console.log(prop);
+    let type = 'default'
     let path = '/images/logo.svg';
-    if (props == 'muted') {
-        type = 'muted';
+    if (prop.props == 'muted') {
+        type = 'muted'
         path = '/images/logo-muted.svg'
 
     }
@@ -13,6 +14,7 @@ export function Logo({ props }) {
 
 
     return (
+
         <img src={path} type={type} alt="Logo" />
     )
 }
