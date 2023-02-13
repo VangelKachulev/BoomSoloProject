@@ -2,7 +2,7 @@
 
 export default function Logo(prop) {
 
-    console.log(prop);
+   
     let type = 'default'
     let path = '/images/logo.svg';
     if (prop.props == 'muted') {
