@@ -1,12 +1,12 @@
 
 
-export default function Logo({prop}) {
+export default function Logo({type}) {
 
    
-    let type = 'default'
+    let defaultType = 'default'
     let path = '/images/logo.svg';
-    if (prop == 'muted') {
-        type = 'muted'
+    if (type == 'muted') {
+        defaultType = 'muted'
         path = '/images/logo-muted.svg'
 
     }
@@ -15,6 +15,6 @@ export default function Logo({prop}) {
 
     return (
 
-        <img src={path} type={type} alt="Logo" />
+        <img src={path} type={defaultType} alt="Logo" />
     )
 }
